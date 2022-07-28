@@ -39,6 +39,7 @@
   </head>
   <body class="font-poppins">
     <header>
+      <!-- navigation part started  -->
       <nav
         class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-40 top-0 left-0 border-b border-gray-200"
       >
@@ -120,6 +121,8 @@
           </div>
         </div>
       </nav>
+      <!-- navigation part end  -->
+      <!-- hero part started  -->
       <section id="home" class="hero">
         <div id="animation-carousel" class="relative" data-carousel="static">
           <!-- Carousel wrapper -->
@@ -131,9 +134,31 @@
             >
               <img
                 src="images/cover/cover-3.webp"
-                class="block h-full object-cover"
+                class="block h-full w-full object-cover"
                 alt="..."
               />
+              <div
+                class="heroinfo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center backdrop-blur-md p-2 md:p-4 md:w-9/12 lg:w-auto rounded-lg lg:p-5"
+              >
+                <h2
+                  class="text-white drop-shadow text-2xl font-semibold md:text-4xl lg:text-6xl"
+                >
+                  Get Started Digital Learning
+                </h2>
+                <p class="text-sm text-gray-50 py-3 lg:text-lg lg:py-5">
+                  It is a long established fact
+                  <span class="hidden md:block"
+                    >that a reader will be distracted by the readable content of
+                    a page when looking at its layout.</span
+                  >
+                </p>
+                <button
+                  type="button"
+                  class="text-white drop-shadow text-sm bg-rtheme inline-block py-2 px-5 rounded lg:text-lg lg:py-3 lg:px-10 md:hover:bg-transparent md:hover:border-white border border-rtheme capitalize"
+                >
+                  get started
+                </button>
+              </div>
             </div>
             <!-- Item 2 -->
             <div
@@ -142,17 +167,6 @@
             >
               <img
                 src="images/cover/cover-2.webp"
-                class="block h-full object-cover"
-                alt="..."
-              />
-            </div>
-            <!-- Item 3 -->
-            <div
-              class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
-              data-carousel-item="active"
-            >
-              <img
-                src="images/cover/cover-1.webp"
                 class="block h-full w-full object-cover"
                 alt="..."
               />
@@ -160,7 +174,7 @@
                 class="heroinfo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center backdrop-blur-md p-2 md:p-4 md:w-9/12 lg:w-auto rounded-lg lg:p-5"
               >
                 <h2
-                  class="text-white text-2xl font-semibold md:text-4xl lg:text-6xl"
+                  class="text-white drop-shadow text-2xl font-semibold md:text-4xl lg:text-6xl"
                 >
                   Get Started Digital Learning
                 </h2>
@@ -174,6 +188,39 @@
                 <button
                   type="button"
                   class="text-white text-sm bg-rtheme inline-block py-2 px-5 rounded lg:text-lg lg:py-3 lg:px-10 md:hover:bg-transparent md:hover:border-white border border-rtheme capitalize"
+                >
+                  get started
+                </button>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
+              data-carousel-item="active"
+            >
+              <img
+                src="images/cover/cover-1.webp"
+                class="block h-full w-full object-cover"
+                alt="..."
+              />
+              <div
+                class="heroinfo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center backdrop-blur-md p-2 md:p-4 md:w-9/12 lg:w-auto rounded-lg lg:p-5 border border-gray-200"
+              >
+                <h2
+                  class="text-white drop-shadow text-2xl font-semibold md:text-4xl lg:text-6xl"
+                >
+                  Get Started Digital Learning
+                </h2>
+                <p class="text-sm text-gray-50 py-3 lg:text-lg lg:py-5">
+                  It is a long established fact
+                  <span class="hidden md:block"
+                    >that a reader will be distracted by the readable content of
+                    a page when looking at its layout.</span
+                  >
+                </p>
+                <button
+                  type="button"
+                  class="text-white drop-shadow text-sm bg-rtheme inline-block py-2 px-5 rounded lg:text-lg lg:py-3 lg:px-10 md:hover:bg-transparent md:hover:border-white border border-rtheme capitalize"
                 >
                   get started
                 </button>
@@ -235,7 +282,231 @@
           </button>
         </div>
       </section>
+      <!-- hero part end  -->
+      <!-- our course part started  -->
     </header>
+    <main>
+      <section id="ourcourses" class="py-10 lg:py-20">
+        <div class="container mx-auto px-4 py-10">
+          <div class="sectitles">
+            <h1
+              class="text-lg text-rtitle capitalize font-semibold text-center md:text-4xl lg:text-5xl"
+            >
+              Discover our popular courses
+            </h1>
+            <p class="text-sm md:text-base text-rsub text-center pt-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
+              consectetur.
+            </p>
+          </div>
+          <div class="courses grid lg:grid-cols-2 gap-5 md:gap-12 pt-10">
+            <div class="course rounded md:flex border">
+              <img
+                src="images/course/course-1.png"
+                alt=""
+                class="hidden md:block"
+              />
+              <img
+                src="images/course/mobile-course-1.jpg"
+                class="w-full md:hidden"
+                alt=""
+              />
+              <div class="course-info p-5 md:p-5">
+                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, consequuntur.
+                </p>
+                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+              </div>
+            </div>
+            <div class="course rounded md:flex border">
+              <img
+                src="images/course/course-1.png"
+                alt=""
+                class="hidden md:block"
+              />
+              <img
+                src="images/course/mobile-course-1.jpg"
+                class="w-full md:hidden"
+                alt=""
+              />
+              <div class="course-info p-5 md:p-5">
+                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, consequuntur.
+                </p>
+                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+              </div>
+            </div>
+            <div class="course rounded md:flex border">
+              <img
+                src="images/course/course-1.png"
+                alt=""
+                class="hidden md:block"
+              />
+              <img
+                src="images/course/mobile-course-1.jpg"
+                class="w-full md:hidden"
+                alt=""
+              />
+              <div class="course-info p-5 md:p-5">
+                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, consequuntur.
+                </p>
+                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+              </div>
+            </div>
+            <div class="course rounded hidden lg:flex border">
+              <img
+                src="images/course/course-1.png"
+                alt=""
+                class="hidden md:block"
+              />
+              <img
+                src="images/course/mobile-course-1.jpg"
+                class="w-full md:hidden"
+                alt=""
+              />
+              <div class="course-info p-5 md:p-5">
+                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, consequuntur.
+                </p>
+                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+              </div>
+            </div>
+            <div class="course rounded hidden lg:flex border">
+              <img
+                src="images/course/course-1.png"
+                alt=""
+                class="hidden md:block"
+              />
+              <img
+                src="images/course/mobile-course-1.jpg"
+                class="w-full md:hidden"
+                alt=""
+              />
+              <div class="course-info p-5 md:p-5">
+                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, consequuntur.
+                </p>
+                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+              </div>
+            </div>
+            <div class="course rounded hidden lg:flex border">
+              <img
+                src="images/course/course-1.png"
+                alt=""
+                class="hidden md:block"
+              />
+              <img
+                src="images/course/mobile-course-1.jpg"
+                class="w-full md:hidden"
+                alt=""
+              />
+              <div class="course-info p-5 md:p-5">
+                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, consequuntur.
+                </p>
+                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="text-white drop-shadow text-sm bg-rtheme block py-2 px-5 rounded lg:text-lg lg:py-3 lg:px-10 md:hover:bg-transparent md:hover:border-rtheme md:hover:text-rtheme border border-rtheme capitalize mt-10 mx-auto lg:hidden"
+          >
+            view all
+          </button>
+        </div>
+      </section>
+      <section id="explore" class="py-10 lg:py-20">
+        <div class="container mx-auto px-4">
+          <div class="course rounded md:flex border items-center">
+            <div class="working md:flex-1">
+              <img
+                src="images/working.png"
+                class="h-80 w-full md:h-full md:w-full object-cover object-top"
+                alt=""
+              />
+            </div>
+            <div class="course-info md:flex-1 lg:flex-2">
+              <div class="p-5 md:p-5">
+                <h2
+                  class="text-xl md:text-3xl lg:text-4xl text-rtitle font-semibold"
+                >
+                  Fundamental of Ui/Ux design
+                </h2>
+                <p class="text-sm md:text-base text-rsub py-4">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which<span
+                    class="lg:hidden text-rtheme font-semibold"
+                    >...See More</span
+                  >
+                  <span class="hidden lg:inline"
+                    >don't look even slightly believable. If you are going to
+                    use a passage of Lorem Ipsum, you need to be sure. Anything
+                    embarrassing hidden in the middle of text. All the Lorem
+                    Ipsum generators on the Internet tend to repeat
+                    predefined.</span
+                  >
+                </p>
+                <div
+                  class="counters grid grid-cols-2 lg:grid-cols-3 gap-3 md:py-5"
+                >
+                  <div class="counter">
+                    <h1 class="text-2xl lg:text-5xl font-semibold">3.2 K</h1>
+                    <p class="text-base lg:text-xl text-rsub capitalize">
+                      Online course
+                    </p>
+                  </div>
+                  <div class="counter">
+                    <h1 class="text-2xl lg:text-5xl font-semibold">3.2 K</h1>
+                    <p class="text-base lg:text-xl text-rsub capitalize">
+                      Online course
+                    </p>
+                  </div>
+                  <div class="counter">
+                    <h1 class="text-2xl lg:text-5xl font-semibold">3.2 K</h1>
+                    <p class="text-base lg:text-xl text-rsub capitalize">
+                      Online course
+                    </p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="text-white drop-shadow text-sm bg-rtheme block py-2 px-5 rounded lg:text-lg lg:py-3 lg:px-10 md:hover:bg-transparent md:hover:border-rtheme md:hover:text-rtheme border border-rtheme capitalize mt-3 md:mt-5"
+                >
+                  read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- flowbite tailwind component library  -->
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
   </body>
