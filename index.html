@@ -28,6 +28,7 @@
               rtitle: "#1D1D1D",
               rsub: "#777777",
               rtitle2: "#4A4A4A",
+              rexplore: "#F4FAFD",
             },
             fontFamily: {
               poppins: "'Poppins', sans-serif",
@@ -283,9 +284,9 @@
         </div>
       </section>
       <!-- hero part end  -->
-      <!-- our course part started  -->
     </header>
     <main>
+      <!-- our course part started  -->
       <section id="ourcourses" class="py-10 lg:py-20">
         <div class="container mx-auto px-4 py-10">
           <div class="sectitles">
@@ -441,24 +442,28 @@
           </button>
         </div>
       </section>
+      <!-- our course part ended  -->
+      <!-- Explore part started  -->
       <section id="explore" class="py-10 lg:py-20">
         <div class="container mx-auto px-4">
-          <div class="course rounded md:flex border items-center">
-            <div class="working md:flex-1">
+          <div class="course rounded grid md:grid-cols-2 xl:grid-cols-3 border">
+            <div class="working xl:col-span-1">
               <img
                 src="images/working.png"
                 class="h-80 w-full md:h-full md:w-full object-cover object-top"
                 alt=""
               />
             </div>
-            <div class="course-info md:flex-1 lg:flex-2">
-              <div class="p-5 md:p-5">
+            <div
+              class="course-info xl:col-span-2 bg-rexplore flex items-center"
+            >
+              <div class="p-5 md:p-5 xl:pl-10">
                 <h2
-                  class="text-xl md:text-3xl lg:text-4xl text-rtitle font-semibold"
+                  class="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-rtitle font-semibold"
                 >
                   Fundamental of Ui/Ux design
                 </h2>
-                <p class="text-sm md:text-base text-rsub py-4">
+                <p class="text-sm md:text-base xl:pb-10 xl:pt-7 text-rsub py-4">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
                   form, by injected humour, or randomised words which<span
@@ -474,22 +479,28 @@
                   >
                 </p>
                 <div
-                  class="counters grid grid-cols-2 lg:grid-cols-3 gap-3 md:py-5"
+                  class="counters grid grid-cols-2 lg:grid-cols-3 gap-3 xl:py-5"
                 >
                   <div class="counter">
-                    <h1 class="text-2xl lg:text-5xl font-semibold">3.2 K</h1>
+                    <h1 class="text-2xl lg:text-4xl xl:text-5xl font-semibold">
+                      3.2 K +
+                    </h1>
                     <p class="text-base lg:text-xl text-rsub capitalize">
                       Online course
                     </p>
                   </div>
                   <div class="counter">
-                    <h1 class="text-2xl lg:text-5xl font-semibold">3.2 K</h1>
+                    <h1 class="text-2xl lg:text-4xl xl:text-5xl font-semibold">
+                      3.2 K +
+                    </h1>
                     <p class="text-base lg:text-xl text-rsub capitalize">
                       Online course
                     </p>
                   </div>
                   <div class="counter">
-                    <h1 class="text-2xl lg:text-5xl font-semibold">3.2 K</h1>
+                    <h1 class="text-2xl lg:text-4xl xl:text-5xl font-semibold">
+                      3.2 K +
+                    </h1>
                     <p class="text-base lg:text-xl text-rsub capitalize">
                       Online course
                     </p>
@@ -506,6 +517,7 @@
           </div>
         </div>
       </section>
+      <!-- Explore part ended  -->
     </main>
     <!-- flowbite tailwind component library  -->
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
