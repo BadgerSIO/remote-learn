@@ -33,6 +33,10 @@
             fontFamily: {
               poppins: "'Poppins', sans-serif",
             },
+            spacing: {
+              "60vh": "60vh",
+              "80vh": "80vh",
+            },
           },
         },
       };
@@ -127,7 +131,7 @@
       <section id="home" class="hero">
         <div id="animation-carousel" class="relative" data-carousel="static">
           <!-- Carousel wrapper -->
-          <div class="overflow-hidden relative h-96 md:h-screen">
+          <div class="overflow-hidden relative h-60vh lg:h-screen">
             <!-- Item 1 -->
             <div
               class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
@@ -231,7 +235,7 @@
           <!-- Slider controls -->
           <button
             type="button"
-            class="flex absolute top-0 left-0 z-30 justify-center items-center px-2 h-full cursor-pointer group focus:outline-none"
+            class="flex absolute top-10 md:top-20 left-0 z-30 justify-center items-center px-2 h-full cursor-pointer group focus:outline-none"
             data-carousel-prev=""
           >
             <span
@@ -257,7 +261,7 @@
           </button>
           <button
             type="button"
-            class="flex absolute top-0 right-0 z-30 justify-center items-center px-2 h-full cursor-pointer group focus:outline-none"
+            class="flex absolute top-10 md:top-20 right-0 z-30 justify-center items-center px-2 h-full cursor-pointer group focus:outline-none"
             data-carousel-next=""
           >
             <span
@@ -287,8 +291,8 @@
     </header>
     <main>
       <!-- our course part started  -->
-      <section id="ourcourses" class="py-10 lg:py-20">
-        <div class="container mx-auto px-4 py-10">
+      <section id="ourcourses" class="py-8 lg:py-20">
+        <div class="container mx-auto px-4">
           <div class="sectitles">
             <h1
               class="text-lg text-rtitle capitalize font-semibold text-center md:text-4xl lg:text-5xl"
@@ -301,11 +305,11 @@
             </p>
           </div>
           <div class="courses grid lg:grid-cols-2 gap-5 md:gap-12 pt-10">
-            <div class="course rounded md:flex border">
+            <div class="course rounded md:flex border group">
               <img
                 src="images/course/course-1.png"
                 alt=""
-                class="hidden md:block"
+                class="hidden md:block group-hover:scale-110 transition-transform"
               />
               <img
                 src="images/course/mobile-course-1.jpg"
@@ -313,65 +317,71 @@
                 alt=""
               />
               <div class="course-info p-5 md:p-5">
-                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
+                <h2
+                  class="text-base md:text-2xl text-rtitle font-semibold md:group-hover:text-rtheme"
+                >
                   Fundamental of Ui/Ux design
                 </h2>
                 <p class="text-sm md:text-base text-rsub py-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt, consequuntur.
                 </p>
-                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+                <h3 class="text-lg text-rtheme font-semibold">Price: 20$</h3>
               </div>
             </div>
-            <div class="course rounded md:flex border">
+            <div class="course rounded md:flex border group">
               <img
-                src="images/course/course-1.png"
+                src="images/course/course-2.png"
                 alt=""
-                class="hidden md:block"
+                class="hidden md:block group-hover:scale-110 transition-transform"
               />
               <img
-                src="images/course/mobile-course-1.jpg"
+                src="images/course/mobile-course-2.jpg"
                 class="w-full md:hidden"
                 alt=""
               />
               <div class="course-info p-5 md:p-5">
-                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
-                  Fundamental of Ui/Ux design
+                <h2
+                  class="text-base md:text-2xl text-rtitle font-semibold md:group-hover:text-rtheme"
+                >
+                  Javascript Basic to advanced
                 </h2>
                 <p class="text-sm md:text-base text-rsub py-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt, consequuntur.
                 </p>
-                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+                <h3 class="text-lg text-rtheme font-semibold">Price: 20$</h3>
               </div>
             </div>
-            <div class="course rounded md:flex border">
+            <div class="course rounded md:flex border group">
               <img
-                src="images/course/course-1.png"
+                src="images/course/course-3.png"
                 alt=""
-                class="hidden md:block"
+                class="hidden md:block group-hover:scale-110 transition-transform"
               />
               <img
-                src="images/course/mobile-course-1.jpg"
+                src="images/course/mobile-course-3.jpg"
                 class="w-full md:hidden"
                 alt=""
               />
               <div class="course-info p-5 md:p-5">
-                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
-                  Fundamental of Ui/Ux design
+                <h2
+                  class="text-base md:text-2xl text-rtitle font-semibold md:group-hover:text-rtheme"
+                >
+                  Fullstack Web Development
                 </h2>
                 <p class="text-sm md:text-base text-rsub py-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt, consequuntur.
                 </p>
-                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+                <h3 class="text-lg text-rtheme font-semibold">Price: 20$</h3>
               </div>
             </div>
-            <div class="course rounded hidden lg:flex border">
+            <div class="course rounded hidden lg:flex border group">
               <img
-                src="images/course/course-1.png"
+                src="images/course/course-4.png"
                 alt=""
-                class="hidden md:block"
+                class="hidden md:block group-hover:scale-110 transition-transform"
               />
               <img
                 src="images/course/mobile-course-1.jpg"
@@ -379,21 +389,23 @@
                 alt=""
               />
               <div class="course-info p-5 md:p-5">
-                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
-                  Fundamental of Ui/Ux design
+                <h2
+                  class="text-base md:text-2xl text-rtitle font-semibold md:group-hover:text-rtheme"
+                >
+                  Digital Marketing
                 </h2>
                 <p class="text-sm md:text-base text-rsub py-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt, consequuntur.
                 </p>
-                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+                <h3 class="text-lg text-rtheme font-semibold">Price: 20$</h3>
               </div>
             </div>
-            <div class="course rounded hidden lg:flex border">
+            <div class="course rounded hidden lg:flex border group">
               <img
-                src="images/course/course-1.png"
+                src="images/course/course-5.png"
                 alt=""
-                class="hidden md:block"
+                class="hidden md:block group-hover:scale-110 transition-transform"
               />
               <img
                 src="images/course/mobile-course-1.jpg"
@@ -401,21 +413,23 @@
                 alt=""
               />
               <div class="course-info p-5 md:p-5">
-                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
-                  Fundamental of Ui/Ux design
+                <h2
+                  class="text-base md:text-2xl text-rtitle font-semibold md:group-hover:text-rtheme"
+                >
+                  Photography Basic Rules
                 </h2>
                 <p class="text-sm md:text-base text-rsub py-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt, consequuntur.
                 </p>
-                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+                <h3 class="text-lg text-rtheme font-semibold">Price: 20$</h3>
               </div>
             </div>
-            <div class="course rounded hidden lg:flex border">
+            <div class="course rounded hidden lg:flex border group">
               <img
-                src="images/course/course-1.png"
+                src="images/course/course-6.png"
                 alt=""
-                class="hidden md:block"
+                class="hidden md:block group-hover:scale-110 transition-transform"
               />
               <img
                 src="images/course/mobile-course-1.jpg"
@@ -423,14 +437,16 @@
                 alt=""
               />
               <div class="course-info p-5 md:p-5">
-                <h2 class="text-base md:text-2xl text-rtitle font-semibold">
-                  Fundamental of Ui/Ux design
+                <h2
+                  class="text-base md:text-2xl text-rtitle font-semibold md:group-hover:text-rtheme"
+                >
+                  Motion Graphics
                 </h2>
                 <p class="text-sm md:text-base text-rsub py-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Deserunt, consequuntur.
                 </p>
-                <h3 class="text-lg text-rtheme font-semibold">Price:20$</h3>
+                <h3 class="text-lg text-rtheme font-semibold">Price: 20$</h3>
               </div>
             </div>
           </div>
@@ -444,9 +460,11 @@
       </section>
       <!-- our course part ended  -->
       <!-- Explore part started  -->
-      <section id="explore" class="py-10 lg:py-20">
+      <section id="explore" class="py-8 lg:py-20">
         <div class="container mx-auto px-4">
-          <div class="course rounded grid md:grid-cols-2 xl:grid-cols-3 border">
+          <div
+            class="explore rounded grid md:grid-cols-2 xl:grid-cols-3 border"
+          >
             <div class="working xl:col-span-1">
               <img
                 src="images/working.png"
@@ -455,13 +473,13 @@
               />
             </div>
             <div
-              class="course-info xl:col-span-2 bg-rexplore flex items-center"
+              class="explore-info xl:col-span-2 bg-rexplore flex items-center"
             >
               <div class="p-5 md:p-5 xl:pl-10">
                 <h2
                   class="text-xl md:text-3xl lg:text-4xl xl:text-5xl text-rtitle font-semibold"
                 >
-                  Fundamental of Ui/Ux design
+                  Explore The Remote Learning Institute
                 </h2>
                 <p class="text-sm md:text-base xl:pb-10 xl:pt-7 text-rsub py-4">
                   There are many variations of passages of Lorem Ipsum
@@ -672,10 +690,14 @@
           </p>
           <div class="students grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-5">
             <div
-              class="stundent border rounded md:hover:shadow-lg transition-shadow"
+              class="stundent border rounded md:hover:shadow-lg transition-shadow group"
             >
-              <div class="studentimg">
-                <img src="images/student/student-1.png" alt="" class="w-full" />
+              <div class="studentimg overflow-hidden">
+                <img
+                  src="images/student/student-1.png"
+                  alt=""
+                  class="w-full group-hover:scale-110 transition-transform"
+                />
               </div>
               <div class="p-4 md:p-5">
                 <h3
@@ -691,10 +713,14 @@
               </div>
             </div>
             <div
-              class="stundent border rounded md:hover:shadow-lg transition-shadow"
+              class="stundent border rounded md:hover:shadow-lg transition-shadow group"
             >
-              <div class="studentimg">
-                <img src="images/student/student-2.png" alt="" class="w-full" />
+              <div class="studentimg overflow-hidden">
+                <img
+                  src="images/student/student-2.png"
+                  alt=""
+                  class="w-full group-hover:scale-110 transition-transform"
+                />
               </div>
               <div class="p-4 md:p-5">
                 <h3
@@ -710,10 +736,14 @@
               </div>
             </div>
             <div
-              class="stundent border rounded md:hover:shadow-lg transition-shadow"
+              class="stundent border rounded md:hover:shadow-lg transition-shadow group"
             >
-              <div class="studentimg">
-                <img src="images/student/student-3.png" alt="" class="w-full" />
+              <div class="studentimg overflow-hidden">
+                <img
+                  src="images/student/student-3.png"
+                  alt=""
+                  class="w-full group-hover:scale-110 transition-transform"
+                />
               </div>
               <div class="p-4 md:p-5">
                 <h3
@@ -729,10 +759,14 @@
               </div>
             </div>
             <div
-              class="stundent border rounded md:hover:shadow-lg transition-shadow"
+              class="stundent border rounded md:hover:shadow-lg transition-shadow group"
             >
-              <div class="studentimg">
-                <img src="images/student/student-4.png" alt="" class="w-full" />
+              <div class="studentimg overflow-hidden">
+                <img
+                  src="images/student/student-4.png"
+                  alt=""
+                  class="w-full group-hover:scale-110 transition-transform"
+                />
               </div>
               <div class="p-4 md:p-5">
                 <h3
@@ -758,7 +792,7 @@
       </section>
       <!-- meet our students end -->
       <!-- testimonia part started  -->
-      <section id="testimonia" class="py-8 lg:py-20">
+      <section id="testimonial" class="py-8 lg:py-20">
         <div class="container mx-auto px-4">
           <div class="faqtitles text-center pb-5 md:pb-10">
             <h1
