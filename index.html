@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Learn</title>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flowbite tailwind component library  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    />
+    <!-- google fonts  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+    </style>
+    <!-- custom class define  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              rtheme: "#289BDE",
+              rtitle: "#1D1D1D",
+              rsub: "#777777",
+              rtitle2: "#4A4A4A",
+            },
+            fontFamily: {
+              poppins: "'Poppins', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <header>
+      <nav
+        class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-40 top-0 left-0 border-b border-gray-200"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="https://flowbite.com/" class="flex items-center">
+            <span class="self-center text-xl font-semibold whitespace-nowrap"
+              >Remote Learn</span
+            >
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-rtheme hover:text-white border border-rtheme bg-white hover:bg-rtheme focus:ring-4 focus:outline-none focus:ring-rtheme font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            >
+              Get started
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-white bg-rtheme rounded md:bg-transparent md:text-rtheme md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rtheme md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rtheme md:p-0"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rtheme md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home" class="hero">
+        <div id="animation-carousel" class="relative" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div class="overflow-hidden relative h-96 md:h-screen">
+            <!-- Item 1 -->
+            <div
+              class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
+              data-carousel-item="active"
+            >
+              <img
+                src="images/cover/cover-3.webp"
+                class="block h-full object-cover"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
+              data-carousel-item="active"
+            >
+              <img
+                src="images/cover/cover-2.webp"
+                class="block h-full object-cover"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20"
+              data-carousel-item="active"
+            >
+              <img
+                src="images/cover/cover-1.webp"
+                class="block h-full w-full object-cover"
+                alt="..."
+              />
+              <div
+                class="heroinfo absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center backdrop-blur-md p-2 md:p-4 md:w-9/12 lg:w-auto rounded-lg lg:p-5"
+              >
+                <h2
+                  class="text-white text-2xl font-semibold md:text-4xl lg:text-6xl"
+                >
+                  Get Started Digital Learning
+                </h2>
+                <p class="text-sm text-gray-50 py-3 lg:text-lg lg:py-5">
+                  It is a long established fact
+                  <span class="hidden md:block"
+                    >that a reader will be distracted by the readable content of
+                    a page when looking at its layout.</span
+                  >
+                </p>
+                <button
+                  type="button"
+                  class="text-white text-sm bg-rtheme inline-block py-2 px-5 rounded lg:text-lg lg:py-3 lg:px-10 md:hover:bg-transparent md:hover:border-white border border-rtheme capitalize"
+                >
+                  get started
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev=""
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next=""
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+    </header>
+    <!-- flowbite tailwind component library  -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  </body>
+</html>
